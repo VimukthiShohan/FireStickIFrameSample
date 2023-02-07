@@ -22,8 +22,8 @@ public class MainActivity extends FragmentActivity {
         webSettings.setJavaScriptEnabled(true);
         webView.setWebViewClient(new Callback());
 //        webView.loadUrl("http://www.SandipBhattacharya.com");
-//        webView.loadUrl("http://www.google.com");
-        webView.loadUrl("https://app.stec.tv/display-login");
+        webView.loadUrl("http://www.google.com");
+//        webView.loadUrl("https://app.stec.tv/display-login");
 //        webView.loadUrl("https://app.stec.tv/");
     }
 
