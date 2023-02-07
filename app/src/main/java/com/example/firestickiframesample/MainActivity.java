@@ -20,11 +20,13 @@ public class MainActivity extends FragmentActivity {
         webView = findViewById(R.id.webview);
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
+        webSettings.setDomStorageEnabled(true);
+        webSettings.setAllowFileAccess(true);
+        webSettings.setAppCacheEnabled(true);
+        webSettings.setUseWideViewPort(true);
+        webSettings.setLoadWithOverviewMode(true);
         webView.setWebViewClient(new Callback());
-//        webView.loadUrl("http://www.SandipBhattacharya.com");
-        webView.loadUrl("http://www.google.com");
-//        webView.loadUrl("https://app.stec.tv/display-login");
-//        webView.loadUrl("https://app.stec.tv/");
+        webView.loadUrl("https://app.stec.tv/display-login");
     }
 
     private class Callback extends WebViewClient {
