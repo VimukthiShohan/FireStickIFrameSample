@@ -26,7 +26,7 @@ public class MainActivity extends FragmentActivity {
         webSettings.setUseWideViewPort(true);
         webSettings.setLoadWithOverviewMode(true);
         webView.setWebViewClient(new Callback());
-        webView.loadUrl("https://app.stec.tv/display-login");
+        webView.loadUrl("https://www.google.com");
     }
 
     private class Callback extends WebViewClient {
